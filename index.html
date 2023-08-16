@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    
+    <title>Recepção Elgin</title>
+</head>
+<body>
+    <div>
+        <svg viewbox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+              <style type="text/css">
+                .wave {
+                  animation: wave 8s linear infinite;
+                }
+          
+                .wave1 {
+                  animation: wave1 10s linear infinite;
+                }
+          
+                .wave2 {
+                  animation: wave2 12s linear infinite;
+                }
+          
+                @keyframes wave {
+                  0% {
+                    transform: translateX(0%);
+                  }
+          
+                  100% {
+                    transform: translateX(100%);
+                  }
+                }
+          
+                @keyframes wave1 {
+                  0% {
+                    transform: scaleY(1.2) translateX(0%);
+                  }
+          
+                  100% {
+                    transform: scaleY(1.2) translateX(100%);
+                  }
+                }
+          
+                @keyframes wave2 {
+                  0% {
+                    transform: scaleY(.8) translateX(0%);
+                  }
+          
+                  100% {
+                    transform: scaleY(.8) translateX(100%);
+                  }
+                }
+              </style>
+              <path id='sineWave' fill="#0099ff" fill-opacity="0.2" d="M0,160 C320,300,420,300,740,160 C1060,20,1120,20,1440,160 V0 H0" />
+            </defs>
+            <use class="wave" href="#sineWave" />
+            <use class="wave" x="-100%" href="#sineWave" />
+            <use class="wave1" href="#sineWave" />
+            <use class="wave1" x="-100%" href="#sineWave" />
+            <use class="wave2" href="#sineWave" />
+            <use class="wave2" x="-100%" href="#sineWave" />
+          </svg>
+    <div class="logo">
+        <img src="assets/elgin-logo-2022.svg" alt="" width="20%">
+        <h4>Automação</h4> 
+    </div>
+    <div class="saudacoes">
+        <h2>Seja bem vindo!</h2>
+        <h2>Welcome!</h2>
+        <h2>¡Bienvenido!</h2>
+        <h2>欢迎</h2>
+    </div>
+    <div data-slide="slide" class="slide">
+        <div class="slide-items">
+          <img src="assets/CIPA1.png" alt="" width="100%" height="90%">
+          <img src="assets/CIPA.png" alt="" width="100%" height="90%">
+          <img src="assets/CIPA2.png" alt="" width="100%" height="90%">
+          <img src="assets/ernanda.png" alt="" width="100%" height="90%">
+          <img src="assets/agosto1.png" alt="" width="100%" height="90%">
+          <img src="assets/agosto2.png" alt="" width="100%" height="90%">
+          <img src="assets/productsElg.png" alt="" width="100%" height="90%">
+          <img src="assets/missao1.png" alt="" width="100%" height="90%">
+          <img src="assets/politicaQUALI.png" alt="" width="100%" height="90%">
+          <img src="assets/ambi.png" alt="" width="100%" height="90%">
+        </div>
+        <nav class="slide-nav">
+          <div class="slide-thumb"></div>
+          <button class="slide-prev">Anterior</button>
+          <button class="slide-next">Próximo</button>
+        </nav>
+      </div>
+    </div>
+      <script src="./slide.js"></script>
+</body>
+</html>
